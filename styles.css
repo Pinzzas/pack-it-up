@@ -1,0 +1,118 @@
+/* ────────────────────────────────────────────────────────────
+   Route 1 Family — global styles
+   Palette: warm sunset — cream, amber, terracotta, deep brown
+──────────────────────────────────────────────────────────── */
+
+/* === Reset ================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Base ================================================= */
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #fdf6e3;
+  color: #3a2e1e;
+  min-height: 100vh;
+}
+
+/* === Screen system ======================================== */
+/* Every screen fills the viewport; only one is visible at a time. */
+.screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* === Placeholder text for unbuilt screens ================= */
+.placeholder-text {
+  font-style: italic;
+  color: #8a7a60;
+  font-size: 1rem;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Title Screen
+──────────────────────────────────────────────────────────── */
+#screen-title {
+  background: linear-gradient(
+    155deg,
+    #fdeebf 0%,
+    #f7c96a 35%,
+    #e07a3a 65%,
+    #b83c1a 100%
+  );
+}
+
+.title-card {
+  text-align: center;
+  padding: 3rem 2.5rem;
+  max-width: 480px;
+  width: 100%;
+}
+
+/* "Manila → Batangas" route label above the title */
+.title-route {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #7a3a18;
+  margin-bottom: 1.25rem;
+  opacity: 0.9;
+}
+
+.title-name {
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  line-height: 1.05;
+  color: #1e0e04;
+  margin-bottom: 1.75rem;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+}
+
+.title-tagline {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #5a3010;
+  margin-bottom: 3rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Buttons
+──────────────────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-block;
+  padding: 0.9rem 2.75rem;
+  background-color: #1e0e04;
+  color: #fdf6e3;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.08s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4a2810;
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid #fdf6e3;
+  outline-offset: 3px;
+}
