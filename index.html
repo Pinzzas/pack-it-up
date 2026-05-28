@@ -22,9 +22,27 @@
       </div>
     </section>
 
-    <!-- ── Pack Screen (Phase 2) ─────────────────────────────── -->
+    <!-- ── Pack Screen ─────────────────────────────────────── -->
     <section id="screen-pack" class="screen hidden">
-      <p class="placeholder-text">Packing screen — coming in Phase 2.</p>
+      <div class="pack-layout">
+        <header class="pack-header">
+          <h2 class="pack-title">Pack Your Bag</h2>
+          <p class="pack-route">Manila → Batangas · 8 events ahead</p>
+        </header>
+        <div class="pack-main">
+          <div class="pack-grid-area">
+            <div id="pack-grid" class="pack-grid"></div>
+            <p class="pack-hint">Drag items onto the grid · Click a packed item to rotate it</p>
+          </div>
+          <div class="pack-tray-area">
+            <h3 class="tray-title">Items</h3>
+            <div id="item-tray" class="item-tray"></div>
+          </div>
+        </div>
+        <footer class="pack-footer">
+          <button id="btn-start-trip" class="btn-primary" disabled>Start Trip →</button>
+        </footer>
+      </div>
     </section>
 
     <!-- ── Drive Screen (Phase 3) ────────────────────────────── -->

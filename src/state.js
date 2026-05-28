@@ -1,6 +1,8 @@
 // state.js — screen/state controller
 // Manages which screen is visible. One screen at a time.
 
+import { initPackScreen } from './pack.js';
+
 // All screen names in the game. Each maps to a <section id="screen-{name}"> in the HTML.
 export const SCREENS = {
   TITLE:   'title',
@@ -21,11 +23,11 @@ export function showScreen(name) {
 }
 
 // Wire up the title screen's start button.
-// For now it advances to pack (which is a placeholder until Phase 2).
 function initTitleScreen() {
   const btn = document.getElementById('btn-start');
   btn.addEventListener('click', () => {
     showScreen(SCREENS.PACK);
+    initPackScreen();
   });
 }
 
